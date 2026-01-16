@@ -169,7 +169,7 @@ def render_index_html(base_url, prefix, subfolders, files):
         '<meta name="viewport" content="width=device-width,initial-scale=1">' + BOOTSTRAP_CSS +
         '<style>body{padding:2rem ;background-color:#f5f7fa;}.search-input{max-width:640px}</style></head><body class="container">'
         # Navbar with visible logo
-        '<div style="font-size:14px;color:#444;margin-top:-10px;margin-bottom:20px;">CloudFront Last Updated: {last_updated}</div>'
+        f'<div style="font-size:14px;color:#444;margin-top:-10px;margin-bottom:20px;">CloudFront Last Updated: {last_updated}</div>'
         '<nav class="navbar mb-3"><div class="container-fluid px-0">'
         '<img src="' + html.escape(logo_url) + '" alt="TWDB Logo" style="height:130px;margin-right:40px;background-color:#f5f7fa;filter:brightness(96%);">'
         '<span class="navbar-brand">' + html.escape(t) + '</span>'
